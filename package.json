@@ -1,0 +1,34 @@
+{
+  "name": "newman-postman-multiple-collections",
+  "version": "1.0.0",
+  "description": "A small framework to execute multiple postman collections in single run by leveraging newman library.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js",
+    "allure-serve": "allure serve reports/allure",
+    "clear-report": "node library/clear_reports.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trongtuyen96/newman-postman-multiple-collections.git"
+  },
+  "keywords": [
+    "postman",
+    "newman",
+    "api",
+    "collections",
+    "allure"
+  ],
+  "author": "Tuyen Nguyen",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/trongtuyen96/newman-postman-multiple-collections/issues"
+  },
+  "homepage": "https://github.com/trongtuyen96/newman-postman-multiple-collections#readme",
+  "dependencies": {
+    "allure-commandline": "^2.20.0",
+    "newman": "^4.6.1",
+    "newman-reporter-allure": "^1.0.7",
+    "newman-reporter-html": "^1.0.5"
+  }
+}
