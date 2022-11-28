@@ -6,7 +6,7 @@
   "scripts": {
     "test": "node index.js",
     "allure-serve": "allure serve reports/allure",
-    "clear-report": "node library/clear_reports.js"
+    "clear-report": "node src/clear-report.js"
   },
   "repository": {
     "type": "git",

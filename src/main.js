@@ -17,9 +17,8 @@ class NewmanConfig {
         let feed_file = require(this.feed_json_file);
         let run_list = feed_file.runs;
         run_list.forEach((value, index) => {
-            console.log("\x1b[34m====== COLLECTION " + index + " ======\x1b[0m");
+            console.log("\x1b[34mCollection " + index + ":\x1b[0m");
             console.log(value);
-            console.log("\n");
             if (value.environment == undefined) {
                 NewmanConfig.runCollection(value.collection);
             } else {
@@ -49,7 +48,7 @@ class NewmanConfig {
             }
         }, function (err) {
             if (err) { throw err; }
-            console.log(`==> ${collection} is \x1b[34mfinished\x1b[0m`);
+            console.log(`\x1b[34m==> ${collection} is finished \u235f\x1b[0m`);
         });
     }
 
@@ -73,11 +72,10 @@ class NewmanConfig {
             }
         }, function (err) {
             if (err) { throw err; }
-            console.log(`==> ${collection} is \x1b[34mfinished\x1b[0m`);
+            console.log(`\x1b[34m==> ${collection} is finished \u235f\x1b[0m`);
         });
 
     }
-
 }
 
 module.exports = NewmanConfig
