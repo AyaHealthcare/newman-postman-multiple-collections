@@ -1,11 +1,10 @@
 const fs = require('fs');
 const path = require('path');
+const NewmanConfig = require('../src/main.js')
 
-const reportDirectories = [
-    "./reports/allure/",
-    "./reports/html/",
-    "./reports/json/"
-];
+const reportDirectories = [NewmanConfig.ALLURE_REPORT_PATH,
+NewmanConfig.NEWMAN_JSON_REPORT_PATH,
+NewmanConfig.HTML_NEWMAN_REPORT_PATH];
 
 function removeReportDirectories(directories) {
     for (let directory of directories) {

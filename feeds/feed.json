@@ -1,5 +1,5 @@
 {
-    "runs":[
+    "collections":[
         {
             "collection": "../collections/Postman Echo Cookie.postman_collection.json"
         },
